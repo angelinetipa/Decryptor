@@ -16,6 +16,8 @@ for i in range(len(encrypted_str)):
 #   if +, change to o
     elif encrypted_str[i] == "+":
         decrypted_str += "\033[0;31m" "o" "\033[0m"
-# if !, change to u
+#   if !, change to u
+    elif encrypted_str[i] == "!":
+        decrypted_str += "\033[0;31m" "u" "\033[0m"
 # else, do not change 
 # print output
