@@ -23,3 +23,4 @@ for i in range(len(encrypted_str)):
     else:
         decrypted_str += encrypted_str[i]
 # print output
+print("\033[3m\033[1m" "The decrypted string is:""\033[0m", decrypted_str, "\n\n", end="*" * 70 )
