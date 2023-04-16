@@ -10,7 +10,9 @@ for i in range(len(encrypted_str)):
 #   if &, change to e
     elif encrypted_str[i] == "&":
         decrypted_str += "\033[0;31m" "e" "\033[0m"
-# if #, change to i
+#   if #, change to i
+    elif encrypted_str[i] == "#":
+        decrypted_str += "\033[0;31m" "i" "\033[0m"
 # if +, change to o
 # if !, change to u
 # else, do not change 
